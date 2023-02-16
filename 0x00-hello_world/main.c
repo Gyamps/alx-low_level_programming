@@ -1,5 +1,12 @@
 #include <stdio.h>
 
-int main(){
-	return 0;
+/**
+ * * main - Entry point of program
+ *
+ * Return: Always 0 (success)
+ */
+
+int main(void)
+{
+	return (0);
 }
