@@ -23,7 +23,7 @@ int main(void)
 					putchar(32);
 					putchar(k);
 					putchar(l);
-					if ((i == 57 & j == 56) && (k == 57 &&  (k == 57 && l == 57))
+					if ((i == 57 && j == 56) && (k == 57 && l == 57))
 							continue;
 					else
 					{
@@ -34,6 +34,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
