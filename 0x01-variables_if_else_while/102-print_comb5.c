@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i, j, k, l, outer_loops, inner_loops;
 
 	for (i = 48; i <= 57; i++)
 	{
@@ -18,19 +18,21 @@ int main(void)
 			{
 				for (l = j + 1; l <= 57; l++)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(32);
-					putchar(k);
-					putchar(l);
-					if ((i == 57 && j == 56) && (k == 57 && l == 57))
+					outer_loops = (i * 10) + j;
+					inner_loops = (k * 10) + l;
+					if (outer_loops < inner_loops)
 					{
-						continue;
-					}
-					else
+
+						putchar(i);
+						putchar(j);
+						putchar(32);
+						putchar(k);
+						putchar(l);
+					if (!((i == 57 && j == 57) && (k == 57 && l == 57)))
 					{
 						putchar(44);
 						putchar(32);
+					}
 					}
 				}
 			}
