@@ -11,33 +11,22 @@
 
 void jack_bauer(void)
 {
-	int H, h, M, m;
+	int h, m;
 
-	H = h = M = m = 0;
-	while (H <= 2)
+	h =  m = 0;
+	while (h < 24)
 	{
-		while (h <= 3)
+		while (m < 60)
 		{
-			while (M <= 5)
-			{
-				while (m <= 9)
-				{
-					_putchar(H + 48);
-					_putchar(h + 48);
-					_putchar(':');
-					_putchar(M + 48);
-					_putchar(m + 48);
-					_putchar('\n');
-					m++;
-				}
-				M++;
-				m = 0;
-			}
-			h++;
-			M = 0;
+			_putchar((h / 10) + 48);
+			_putchar((h % 10) + 48);
+			_putchar(':');
+			_putchar((m / 10) + 48);
+			_putchar((m % 10) + 48);
+			_putchar('\n');
+			m++;
 		}
-		H++;
-		h = 0;
+		m = 0;
+		h++;
 	}
-	H = 0;
 }
