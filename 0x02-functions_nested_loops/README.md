@@ -20,3 +20,6 @@
 ### 6-abs.c
 > computes absolute value of an integer
 
+### 7-print_last_digit.c
+> prints last digit of a number
+
