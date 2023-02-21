@@ -24,4 +24,5 @@ int print_last_digit(int n)
 	{
 		_putchar(last_digi + 48);
 		return (last_digi);
+	}
 }
