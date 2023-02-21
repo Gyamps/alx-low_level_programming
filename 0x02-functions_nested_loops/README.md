@@ -14,3 +14,6 @@
 ### 4-isalpha.c
 > Checks for alphabetic character, regardless of case
 
+### 5-sign.c
+> prints the sign of the number
+

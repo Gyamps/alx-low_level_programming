@@ -33,7 +33,7 @@ void print_alphabet_x10(void);
 /**
  * _islower - checks for lowercase character
  *
- * Function takes 1 char argument
+ * Function takes 1 int argument
  *
  * @c: The character
  * Return: 1 if c is lowercase, 0 otherwise
@@ -43,11 +43,22 @@ int _islower(int c);
 /**
  * _isalpha(int c) - checks for alphabetic characters.
  *
- * Function takes 1 char argument
+ * Function takes 1 int argument
  *
  * @c: The character
  * Return: 1 if c is a letter, lowercase or uppercase, 0 otherwise
  */
 int _isalpha(int c);
+
+/**
+ * print_sign - prints the sign of a number
+ *
+ * Function takes 1 int argument
+ *
+ * @n: The integer number
+ * Return: 1 and print + if n is positive, 0 and print 0 if n is zero
+ * -1 and print - if n is negative
+ */
+int print_sign(int n);
 
 #endif
