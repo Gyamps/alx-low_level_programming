@@ -81,5 +81,14 @@ int _abs(int n);
  */
 int print_last_digit(int n);
 
+/**
+ * jack_bauer - prints every minute of the day of Jack Bauer, starting from
+ * 00:00  to 23:59
+ *
+ * Function takes no arguments
+ *
+ * Return: nothing
+ */
+void jack_bauer(void);
 
 #endif
