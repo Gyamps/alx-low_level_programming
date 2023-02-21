@@ -27,7 +27,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(cur_num + 48);
 			}
-			else if (cur_num < 9)
+			else if (cur_num > 9)
 			{
 				_putchar(',');
 				_putchar(' ');
