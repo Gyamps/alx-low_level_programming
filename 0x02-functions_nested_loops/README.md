@@ -17,3 +17,6 @@
 ### 5-sign.c
 > prints the sign of the number
 
+### 6-abs.c
+> computes absolute value of an integer
+
