@@ -16,7 +16,7 @@ int main(void)
 	n = 1;
 	x = 2;
 	printf("%ld, %ld, ", n, x);
-	for (i = 1; i <= 50; i++)
+	for (i = 2; i <= 50; i++)
 	{
 		f_num = n + x;
 		if (i == 50)
