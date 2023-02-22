@@ -15,4 +15,17 @@
  */
 void positive_or_negative(int i);
 
+/**
+ * largest_number - prints out the largest of 3 numbers
+ *
+ * Function requires 3 int arguments
+ *
+ * @a: First int args
+ * @b: Second int args
+ * @c: Third int args
+ *
+ * Return: largest integer
+ */
+int largest_number(int a, int b, int c);
+
 #endif
