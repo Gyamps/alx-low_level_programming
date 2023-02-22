@@ -134,4 +134,15 @@ void print_to_98(int n);
  */
 void print_times_table(int n);
 
+/**
+ * natural - prints multiples of 3 or 5 below 1024 (excluded)
+ *
+ * Function takes 1 int argument
+ *
+ * @n: The integer argument
+ *
+ * Return: nothing
+ */
+void natural(int n);
+
 #endif
