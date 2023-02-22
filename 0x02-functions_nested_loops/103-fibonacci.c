@@ -18,10 +18,9 @@ int main(void)
 	for (;;)
 	{
 		f_num = n + x;
-		if (f_num <= 4000000)
+		if ((f_num <= 4000000) && (f_num % 2 == 0))
 		{
-			if (f_num % 2 == 0)
-				sum += f_num;
+			sum += f_num;
 		}
 		else
 			break;
