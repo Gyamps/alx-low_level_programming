@@ -39,7 +39,7 @@ int main(void)
 			f_num2 = x + y;
 			f_num1 = n1 + n2 + (f_num2 / 1000000000);
 			printf(", %ld", f_num1);
-			printf("ld", f_num2 % 1000000000);
+			printf("%ld", f_num2 % 1000000000);
 			n1 = n2;
 			x = y;
 			n2 = f_num1;
