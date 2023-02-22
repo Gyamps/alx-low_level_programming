@@ -1,23 +1,22 @@
 #include "main.h"
 
 /**
- * natural - prints the sum of all multiples of 3 or 5 below 1024
+ * main - prints the sum of all multiples of 3 or 5 below 1024
  *
- * Function takes 1 int argument
+ * Function takes no argument
  *
- * @n: The integer argument
- *
- * Return: nothing
+ * Return: 0
  */
 
-void natural(int n)
+int main(void)
 {
 	int sum, i;
 
 	for (i = 1; i <= 1024; i++)
 	{
-		if (i % n == 0)
+		if ((i % 3 == 0) || (i % 5 == 0))
 			sum += i;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
