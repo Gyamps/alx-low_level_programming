@@ -16,10 +16,10 @@ int main(void)
 	n = 1;
 	x = 2;
 	printf("%ld, %ld, ", n, x);
-	for (i = 2; i <= 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 		f_num = n + x;
-		if (i == 50)
+		if (i == 49)
 			printf("%ld\n", f_num);
 		else
 			printf("%ld, ", f_num);
