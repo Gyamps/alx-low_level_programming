@@ -11,10 +11,11 @@
 
 int main(void)
 {
-	long int n, x, f_num, sum;
+	int n, x, f_num, sum;
 
 	n = 1;
 	x = 1;
+	sum = 0;
 	for (;;)
 	{
 		f_num = n + x;
@@ -27,7 +28,7 @@ int main(void)
 		n = x;
 		x = f_num;
 	}
-	printf("%ld\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
 
