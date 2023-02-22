@@ -16,15 +16,11 @@ int main(void)
 	n = 1;
 	x = 1;
 	sum = 0;
-	for (;;)
+	while (x < 4000000)
 	{
 		f_num = n + x;
 		if ((f_num <= 4000000) && (f_num % 2 == 0))
-		{
 			sum += f_num;
-		}
-		else
-			break;
 		n = x;
 		x = f_num;
 	}
