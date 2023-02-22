@@ -1,0 +1,44 @@
+#include "main.h"
+
+/**
+ * print_times_table - prints the n times table, starting with 0
+ *
+ * Function takes 1 int argument
+ *
+ * @n: The int argument
+ *
+ * Return: nothing
+ */
+
+void print_times_table(int n)
+{
+	int row, col, prod;
+
+	row = col = 0;
+	for (row = 0; row <= n; row++)
+	{
+		for (col = 0; col <= n; col++)
+		{
+			prod = row * col;
+			if ((n > 15) || (n < 0))
+				_putchar(0);
+			else if (col == 0)
+				_putchar(prod + 48);
+			else if (prod <= n)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(prod + 48);
+			}
+			else if (prod >= n)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((prod / 10) + 48);
+				_putchar((prod % 10) + 48);
+			}
+		}
+		_putchar('\n');
+	}
+}

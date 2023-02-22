@@ -42,4 +42,8 @@
 * You are allowed to use the standard library
 
 ## Optional Tasks
+### 100-times_table.c
+> prints the `n` tiems table, startign with 0.
+* If `n` is greater than `15` or less than `0` the function should print
+* nothing
 
