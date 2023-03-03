@@ -108,28 +108,6 @@ char *rot13(char *s);
 void print_number(int n);
 
 /**
- * infinite_add - adds two numbers
- *
- * @n1: first number
- * @n2: second number
- * @r: buffer to store the result
- * @size_r: buffer size
- *
- * Return: the result
- */
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
-
-/**
- * print_buffer - prints a buffer
- *
- * @b: the buffer
- * @size: the size of the buffer
- *
- * Return: nothing
- */
-void print_buffer(char *b, int size);
-
-/**
  * _strlen - length of string
  *
  * @s: the string
