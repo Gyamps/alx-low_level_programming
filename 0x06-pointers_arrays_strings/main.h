@@ -117,7 +117,7 @@ void print_number(int n);
  *
  * Return: the result
  */
-char *infinite_add(char *n1, chr *n2, char *r, int size_r);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
 /**
  * print_buffer - prints a buffer
