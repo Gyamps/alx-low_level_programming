@@ -1,27 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - length of string
- *
- * @s: the string
- *
- * Return: length of string
- */
-
-int _strlen(char *s)
-{
-	int len = 0;
-	int i;
-
-	for (i = 0; *s; i++)
-	{
-		len++;
-		s++;
-	}
-	return (len);
-}
-
-/**
  * cap_string - capitalizes all words of a string
  *
  * @s: the string
@@ -30,15 +9,21 @@ int _strlen(char *s)
  */
 char *cap_string(char *s)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i < _strlen(s); i++)
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] = s[i] - 'a' + 'A';
+	i++;
+	while (s[i] != '\0')
 	{
-		if (s[i] == ' ')
-		{
-			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
-				s[i + 1] -= 32;
-		}
+		if ((s[i] >= 'a' && s[i] <= 'z')
+		&& (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+		s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+		s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+		s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
+		|| s[i - 1] == '\n'))
+			s[i] = s[i] - 'a' + 'A';
+		i++;
 	}
 	return (s);
 }
