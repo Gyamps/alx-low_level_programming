@@ -129,4 +129,13 @@ char *infinite_add(char *n1, chr *n2, char *r, int size_r);
  */
 void print_buffer(char *b, int size);
 
+/**
+ * _strlen - length of string
+ *
+ * @s: the string
+ *
+ * Return: the length of string
+ */
+int _strlen(char *s);
+
 #endif
