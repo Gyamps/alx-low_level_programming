@@ -1,26 +1,4 @@
-#include"main.h"
-
-int _strlen(char *s);
-/**
- * _strlen - length of string
- *
- * @s: the string
- *
- * Return: length of string
- */
-
-int _strlen(char *s)
-{
-	int len = 0;
-	int i;
-
-	for (i = 0; *s; i++)
-	{
-		len++;
-		s++;
-	}
-	return (len);
-}
+#include "main.h"
 
 /**
  * leet - encodes a string into 1337
@@ -31,18 +9,22 @@ int _strlen(char *s)
  */
 char *leet(char *s)
 {
-	char letters[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char char_replace[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	int i, j;
-
-	for (i = 0; i < _strlen(s); i++)
+	while (*(s + count) != '\0')
 	{
-		for (j = 0; j < _strlen(letters); j++)
+		for (i = 0; i < 5; i++)
 		{
-			if (s[i] == letters[j])
-				s[i] = char_replace[j];
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
 		}
+		count++;
 	}
 	return (s);
 }
