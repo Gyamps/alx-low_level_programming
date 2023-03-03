@@ -36,9 +36,9 @@ char *cap_string(char *s)
 	{
 		if (s[i] == ' ')
 		{
-			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
-				str[i + 1] -= 32;
+			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				s[i + 1] -= 32;
 		}
 	}
-	return (str);
+	return (s);
 }
