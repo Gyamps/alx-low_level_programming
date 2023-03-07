@@ -8,14 +8,34 @@
  * Return: pointer to that character in string
  */
 
+/**
+ * My naive code which is somehow wrong for one test
+ * but works. So I'm confused.
+ */
+
+/**
+ * char *_strchr(char *s, char c)
+ * {
+ *	int i;
+ *
+ *	for (i = 0; s[i] != '\0'; i++)
+ *	{
+ *		if (s[i] == c)
+ *			return (&s[i]);
+ *	}
+ *	return (NULL);
+ * }
+ */
+
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] == c)
-			return (&s[i]);
-	}
-	return (NULL);
+	while (s[i] != '\0' && s[i] != c) /* find match */
+		i++;
+
+	if (s[i] == c) /* if match, assign to address */
+		return (&s[i]);
+	else
+		return (NULL);
 }
