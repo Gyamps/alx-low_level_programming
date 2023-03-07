@@ -8,25 +8,6 @@
  * Return: pointer to that character in string
  */
 
-/**
- * My naive code which is somehow wrong for one test
- * but works. So I'm confused.
- */
-
-/**
- * char *_strchr(char *s, char c)
- * {
- *	int i;
- *
- *	for (i = 0; s[i] != '\0'; i++)
- *	{
- *		if (s[i] == c)
- *			return (&s[i]);
- *	}
- *	return (NULL);
- * }
- */
-
 char *_strchr(char *s, char c)
 {
 	int i = 0;
@@ -39,3 +20,21 @@ char *_strchr(char *s, char c)
 	else
 		return (NULL);
 }
+
+/**
+ * _strchr - version doesn't work
+ * My version which doesn't seem to work
+ *
+ *
+ * char *_strchr(char *s, char c)
+ * {
+ *     int i;
+ *
+ *     for (i = 0; s[i] != '\0'; i++)
+ *     {
+ *             if (s[i] == c)
+ *                     return (&s[i]);
+ *     }
+ *     return (NULL);
+ * }
+ */
