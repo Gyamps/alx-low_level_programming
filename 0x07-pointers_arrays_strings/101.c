@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+This block of code writes exactly 6 bytes of characters
+to the 101-crackme_password file.
+*/
+
 int main() {
     FILE *fp;
     char str[6] = "abc123";
