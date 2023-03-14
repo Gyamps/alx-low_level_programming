@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	ch_ptr = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2)));
+	ch_ptr = malloc(sizeof(char) * ( (_strlen(s1) + _strlen(s2)) + 1 ));
 	if (ch_ptr == NULL)
 		return (NULL);
 
