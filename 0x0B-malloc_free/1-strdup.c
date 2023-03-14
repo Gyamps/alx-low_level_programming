@@ -34,7 +34,7 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 	char *ch_ptr;
-	unsigned int i;
+	int i;
 
 	if (str == NULL)
 		return (NULL);
