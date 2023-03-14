@@ -38,7 +38,7 @@ char *argstostr(int ac, char **av)
 	{
 		str_lens += _strlen(av[i]); /* total length of strng arguments */
 	}
-	
+
 	str_lens += (ac + 1); /*padding for newlines and null terminator */
 
 
