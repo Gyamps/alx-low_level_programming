@@ -1,6 +1,5 @@
 #include <stdlib.h>
-
-/* defines size_t */
+#include <stddef.h>
 
 /**
  * array_iterator - execute function on an array via a function ptr
