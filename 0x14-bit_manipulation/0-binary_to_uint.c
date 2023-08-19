@@ -20,10 +20,10 @@ unsigned int binary_to_uint(const char *b)
 	j = 0;
 	while (b[j])
 	{
-		if ((b[j] != '0') && (b[i] != '1'))
+		if ((b[j] != '0') && (b[j] != '1'))
 			return (sum);
 
-		if (b[i] == '1')
+		if (b[j] == '1')
 			sum += (1 * (1 << len_b));
 		j++;
 		len_b--;
